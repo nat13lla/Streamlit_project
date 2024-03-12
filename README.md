@@ -14,6 +14,10 @@ This is a simple task manager application built using Streamlit, a Python librar
 
 https://taskmasterpy-q9gvhrfrgmvf8yzajkfzpt.streamlit.app 
 
-### Adding Some Colour & Category Choice: (App2)
+### Enhanced System- Category Choice: (App1)
+
+
+
+### Adding Some Colour: (App2)
 
 https://app2py-bh9fcmvesrqq7nogmp6g3d.streamlit.app/
