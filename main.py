@@ -36,11 +36,13 @@ def main():
     # Button to increment counter
     if st.button('Click me!'):
         st.session_state.counter = increment_counter(st.session_state.counter)
+    
     tasks_df = pd.DataFrame(columns=["Task", "Status", "Deadline"])
 
-    def add_task(task):
+    def add_task(task, deadline):
         global tasks_df
-        tasks_df = tasks_df.append({"Task": task, "Status": "Pending"}, ignore_index=True)
+        new_task_df = pd.DataFrame({"Task": [task], "Status": ["Pending"], "Deadline": [deadline]})
+        tasks_df = pd.concat([tasks_df, new_task_df], ignore_index=True)
     
     def complete_task(index):
         global tasks_df
