@@ -1,4 +1,5 @@
 import streamlit as st
+streamlit run test.py
 
 # Function to initialize counter
 def initialize_counter():
