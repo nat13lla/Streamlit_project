@@ -23,16 +23,11 @@ def main():
     if st.session_state.tasks:
         st.header("Task List")
         for i, task in enumerate(st.session_state.tasks, start=1):
-            importance_color = {"Low": "yellow", "Medium": "orange", "High": "red"}
-            importance_style = f"color: {importance_color[task['importance']]}"
-            category_color = {"Work": "blue", "Personal": "green", "Study": "orange", "Other": "gray"}
-            category_style = f"color: {category_color[task['category']]}"
-
             task_complete = st.checkbox("", value=task['completed'], key=f"task_{i}")
             if task_complete != task['completed']:
                 st.session_state.tasks[i-1]["completed"] = task_complete
 
-            st.markdown(f"{i}. {task['task']} (Due: {task['due_date']}), (Importance: <span style='{importance_style}'>{task['importance']}</span>), (Category: <span style='{category_style}'>{task['category']}</span>)", unsafe_allow_html=True)
+        st.checkbox(f"{i}. {task['task']} (Due: {task['due_date']}), (Importance: {task['importance']}), (Category: {task['category']})")
 
 
 if __name__ == "__main__":
