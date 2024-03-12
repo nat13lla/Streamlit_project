@@ -9,8 +9,9 @@ This is a simple task manager application built using Streamlit, a Python librar
 - Show the priority of the task (colour)
 
 ## Links:
+### Basic system: (Task master)
 
 https://taskmasterpy-q9gvhrfrgmvf8yzajkfzpt.streamlit.app 
 
-## Adding Some Colour:
+### Adding Some Colour: (App2)
 
