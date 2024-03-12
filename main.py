@@ -2,41 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.set_page_config(
-    page_title="Our Edit Attempt",
-    page_icon="📊",
-    layout="centered",
-    initial_sidebar_state="auto",
-    menu_items={
-        "Get Help": "https://github.com/Siddhesh-Agarwal/CGPA-Calculator/discussions",
-        "Report a bug": "https://github.com/Siddhesh-Agarwal/CGPA-Calculator/issues/new",
-        "About": None,
-    },
-)
-
-# Function to initialize counter
-def initialize_counter():
-    return 0
-
-# Function to increment counter
-def increment_counter(counter):
-    return counter + 1
 
 # Main function
 def main():
-    st.title('Click Counter')
-
-    # Initialize counter
-    if 'counter' not in st.session_state:
-        st.session_state.counter = initialize_counter()
-
-    # Display current count
-    st.write('Number of times button clicked:', st.session_state.counter)
-
-    # Button to increment counter
-    if st.button('Click me!'):
-        st.session_state.counter = increment_counter(st.session_state.counter)
-    
     tasks_df = pd.DataFrame(columns=["Task", "Status", "Deadline"])
 
     def add_task(task, deadline):
