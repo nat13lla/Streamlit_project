@@ -29,12 +29,12 @@ def main():
     
     
     st.write(tasks_df)
-    
     for index, row in tasks_df.iterrows():
         if st.button(f"Complete Task {index}"):
             complete_task(index)
         if st.button(f"Delete Task {index}"):
             delete_task(index)
+
 # Run the app
 if __name__ == '__main__':
     main()
