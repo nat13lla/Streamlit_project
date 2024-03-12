@@ -10,14 +10,14 @@ This is a simple task manager application built using Streamlit, a Python librar
 - Show the category of the task (colour)
 
 ## Links:
-### Basic system: (Task master)
+### Basic system: (task_master.py)
 
 https://taskmasterpy-q9gvhrfrgmvf8yzajkfzpt.streamlit.app 
 
-### Enhanced System- Category Choice: (App1)
+### Enhanced System- Category Choice: (app1.py)
 
 
 
-### Adding Some Colour: (App2)
+### Adding Some Colour: (app2.py)
 
 https://app2py-bh9fcmvesrqq7nogmp6g3d.streamlit.app/
