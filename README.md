@@ -8,6 +8,6 @@ This is a simple task manager application built using Streamlit, a Python librar
 - View the list of tasks with checkboxes.
 - Show the priority of the task
 
-## How to Run
+## Follow this link:
 
 https://taskmasterpy-q9gvhrfrgmvf8yzajkfzpt.streamlit.app 
