@@ -1,4 +1,5 @@
 # Streamlit Task Manager App
+> By Natalie Coyle and Iqra Finiin
 
 This is a simple task manager application built using Streamlit, a Python library for building interactive web applications. The app allows users to input task names and due dates, which are then displayed on a checkbox list.
 
