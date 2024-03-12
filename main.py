@@ -19,10 +19,14 @@ def main():
         global tasks_df
         tasks_df.drop(index, inplace=True)
 
-    task_input = st.text_input("Add Task:")
-    deadline_input = st.date_input("Choose Deadline:")
-    if st.button("Add"):
-        add_task(task_input, deadline_input)
+    num_tasks = st.number_input("Number of Tasks to Add:", min_value=1, step=1)
+    
+    for i in range(num_tasks):
+        task_input = st.text_input(f"Add Task {i+1}:")
+        deadline_input = st.date_input(f"Choose Deadline {i+1}:")
+        if st.button(f"Add Task {i+1}"):
+            add_task(task_input, deadline_input)
+    
     
     st.write(tasks_df)
     
