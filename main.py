@@ -2,11 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-
+tasks_df = pd.DataFrame(columns=["Task", "Status", "Deadline"])
+    
 # Main function
 def main():
-    tasks_df = pd.DataFrame(columns=["Task", "Status", "Deadline"])
-
     def add_task(task, deadline):
         global tasks_df
         new_task_df = pd.DataFrame({"Task": [task], "Status": ["Pending"], "Deadline": [deadline]})
