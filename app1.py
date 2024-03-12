@@ -20,14 +20,11 @@ def main():
         else:
             st.error("Please enter a task name.")
 
+
     if st.session_state.tasks:
         st.header("Task List")
         for i, task in enumerate(st.session_state.tasks, start=1):
-            task_complete = st.checkbox("", value=task['completed'], key=f"task_{i}")
-            if task_complete != task['completed']:
-                st.session_state.tasks[i-1]["completed"] = task_complete
-
-        st.checkbox(f"{i}. {task['task']} (Due: {task['due_date']}), (Importance: {task['importance']}), (Category: {task['category']})")
+            st.checkbox(f"{i}. {task['task']} (Due: {task['due_date']}), (Importance: {task['importance']}), (Category: {task['category']})")
 
 
 if __name__ == "__main__":
