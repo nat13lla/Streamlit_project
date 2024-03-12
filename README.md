@@ -6,8 +6,11 @@ This is a simple task manager application built using Streamlit, a Python librar
 
 - Add tasks with due dates.
 - View the list of tasks with checkboxes.
-- Show the priority of the task
+- Show the priority of the task (colour)
 
-## Follow this link:
+## Links:
 
 https://taskmasterpy-q9gvhrfrgmvf8yzajkfzpt.streamlit.app 
+
+## Adding Some Colour:
+
